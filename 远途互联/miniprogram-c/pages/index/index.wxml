@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="header-img">
+    <image class="img" mode="scaleToFill" src="https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/6f54f41a4ce2fc6fa38c5aea4de6b752-1125-633.png" />
+  </view>
+  <view class="login-item">
+    <view class="welcome">欢迎使用宁医大总院互联网医院</view>
+    <view class="welcome-tip">登录即可查看信息哦</view>
+    <view class="btns">
+      <button type="primary">
+        <image class="icon" mode="scaleToFill" src="https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/6d67889c48ab4586e48d6e19a3542362-84-84.png" />
+        微信授权登录
+      </button>
+      <navigator url="../login/login">
+        <button class="btn">
+          账号密码登录
+        </button>
+      </navigator>
+    </view>
+    <navigator url="../register/register">
+      <view class="bottom-tip">
+        没有账号？<text class="bottom-tip-btn">注册新账号</text>
+      </view>
+    </navigator>
+  </view>
+</view>

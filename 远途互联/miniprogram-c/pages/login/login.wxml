@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="title">登录</view>
+  <view class="form">
+    <view class="form-item">
+      <image class="icon icon1" mode="scaleToFill" src="https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/6317f2ef0a4ece47c2cc3ba0a3a828a8-42-40.png"/>
+      <input class="phone" name="phone" maxlength="11" bindinput="setPhone" placeholder="请输入手机号" value="{{phone}}" />
+    </view>
+    <view class="form-item space">
+      <image class="icon icon1" mode="scaleToFill" src="https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/523e08804598475a99efb9de90c40cd8-42-40.png"/>
+      <input class="password" name="password" password="{{eyy}}" maxlength="16" bindinput="setPassword" placeholder="请输入6~16密码" value="{{password}}" /> 
+      <image class="icon" mode="scaleToFill" bindtap="tempEyy" src="{{eyyImg}}" />
+    </view>
+    <view class="forget">忘记密码？</view>
+    <button type="primary" class="btn" bindtap="toLogin" loading="{{loading}}" disabled="{{disabled}}">
+      <text>立即登录</text>
+    </button>
+  </view>
+  <navigator url="../register/register">
+    <view class="bottom-tip">
+      没有账号？<text class="bottom-tip-btn">注册新账号</text>
+    </view>
+  </navigator>
+</view>
